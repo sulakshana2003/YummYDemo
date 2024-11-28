@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/newfooter.css">
+    <link rel="stylesheet" href="product.css">
+    <title>Burger</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logop" id="yummyphoto">
+            <h1>YummY</h1>
+        </div>
+        <div class="products" id="products">
+            <div class="cart-icon">
+                <a href="../newcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="product-detail-container">
+      <div class="product-image">
+        <div class="hero-images"><img src="../images/products/burgar.jpg" alt="burger"></div> <!-- Image slider -->
+      </div>
+        <div class="product-info">
+            <h2>Burger</h2>
+            <p class="price">LKR 990.00</p>
+            <div class="quantity">
+                <label for="burger">Quantity:</label>
+                <input type="number" id="burger" name="mango1" min="1" value="1">
+            </div>
+            <button class="btn" onclick="addToCart('Burger', 990.00, 'burger')">Add to Cart</button>
+              <h3>Product Details</h3>
+            <pre>
+              double cheese
+              thick meat patty
+            </pre>
+            
+        </div>
+    </div>
+
+    <footer class="new-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <h3>YummY</h3>
+          </div>
+          <p class="footer-description">Delivering happiness to your doorstep. Experience the best food delivery service in Colombo.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+  
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="newhomepage.html">Home</a></li>
+            <li><a href="menupage.html">Menu</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Help & Support</h4>
+          <ul class="footer-links">
+            <li><a href="contactus.html">FAQ</a></li>
+            <li><a href="privacypolicy.html">Terms of Service</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-phone"></i> +94 11 234 5678</li>
+            <li><i class="fas fa-envelope"></i> support@yummy.lk</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Food Street, Colombo 03, Sri Lanka</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 YummY. All rights reserved.</p>
+          <div class="payment-methods">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-paypal"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+    <script src="../js/cart.js" defer></script>
+    
+</body>
+</html>

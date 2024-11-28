@@ -1,0 +1,227 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+}
+
+body {
+  line-height: 1.6;
+  color: #2D3436; 
+  background-color: #ffffff; 
+}
+
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(45, 52, 54, 0.1); 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto; 
+}
+
+
+.logo h1 {
+  color: #FF5733; 
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0; 
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none; 
+}
+
+nav ul li a {
+  color: #2D3436; 
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #FF5733; 
+}
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff; 
+  overflow: hidden; 
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.search-bar input {
+  width: 400px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.search-bar button {
+  padding: 15px 30px;
+  background-color: white; 
+  color: #FF6B6B; 
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  color: white;
+  background-color: #FF6B6B; 
+}
+
+/* Category Section */
+.category {
+  padding: 60px 20px;
+  background-color: #F5F6FA; 
+}
+
+.category h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #2D3436; 
+}
+
+.categories {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.category-item {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(45, 52, 54, 0.1); 
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-size: cover; 
+  background-position: center; 
+  height: 100px;
+}
+.fast-food {
+  background-image: url('https://www.hashtagburgersandwaffles.com.au/wp-content/uploads/2024/08/Why-Fast-Foods-Are-So-Successful.jpeg'); 
+}
+
+.breakfast {
+  background-image: url('https://www.scripps.org/sparkle-assets/images/eat_this_not_that_web-2e797baf055a6695c298d7bb93f8076a.jpg'); 
+}
+
+.indian {
+  background-image: url('https://turmericvictoria.com/images/popular-indian-dishes-blogs.png'); 
+}
+
+.healthy {
+  background-image: url('https://content.health.harvard.edu/wp-content/uploads/2024/01/b89e20a3-0e68-42e1-b4fe-782f3355a11b.jpg'); 
+}
+
+.asian {
+  background-image: url('https://images.prismic.io/facility-websites/Zk56Niol0Zci9Xx0_asian_food.png?auto=format%2Ccompress&rect=0%2C28%2C1792%2C968&w=1000&h=540'); 
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(45, 52, 54, 0.1); 
+  color: #FF5733; 
+}
+.categories a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.categories a:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(45, 52, 54, 0.1); 
+  color: /* #FF5733 */red;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.category-item,
+.hero-content {
+  animation: fadeIn 0.6s ease-out;
+}
+.hero-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; 
+}
+
+.hero-image {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 1s ease-in-out; 
+}
+
+.hero-image.visible {
+  opacity: 1; 
+}

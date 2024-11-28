@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+}
+body{
+  background: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fmuzztech.com%2Fimages%2FTerms-and-Conditions-.jpeg&tbnid=obgZb2JVMDXrtM&vet=12ahUKEwjLjIa0zsyJAxWqm2MGHRehErAQxiAoAHoECAAQIg..i&imgrefurl=https%3A%2F%2Fmuzztech.com%2Findex.php%2Fterms-and-conditions&docid=u58vPcggL8NyQM&w=1200&h=675&itg=1&q=terms%20and%20conditions&ved=2ahUKEwjLjIa0zsyJAxWqm2MGHRehErAQxiAoAHoECAAQIg");
+}
+.terms-section {
+  padding: 80px 20px;
+  background-color: #F5F6FA;
+}
+
+.terms-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(45, 52, 54, 0.1);
+}
+
+.terms-container h1 {
+  font-size: 36px;
+  color: #2D3436;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.terms-content h2 {
+  font-size: 24px;
+  color: #FF5733;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.terms-content p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 30px;
+  }
+
+  .terms-container h1 {
+    font-size: 32px;
+  }
+
+  .terms-content h2 {
+    font-size: 20px;
+  }
+}

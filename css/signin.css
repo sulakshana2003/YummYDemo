@@ -1,0 +1,96 @@
+*{
+  font-family: "Itim", cursive;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.form-container{
+  display: flex;
+  background-color: #f2f2f2;
+  background: url('https://cdn.dribbble.com/users/1703386/screenshots/4663204/____.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.form-filling{
+  background-color: none;
+  padding: 40px;
+  /* border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding-top: 20px;
+}
+.form-filling h1{
+  color: black;
+  font-size: 25px;
+  margin-top: 30px;
+}
+span{
+  color: #FF5733;
+  font-size: 40px;
+}
+.form-filling label{
+  display: block;
+  text-align: left;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #333;
+}
+.form-filling input{
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  width: 100%;
+  height: 30px;
+}
+button{
+  width: 100%;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  background-color: #FF0000;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+/* need to edit */
+button:hover{
+  cursor: pointer;
+}
+.form-filling p{
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.form-filling p.sign-inn{
+  font-weight: thick;
+  color: #333;
+}
+/* need to edit */
+.form-filling p.sign-inn a{
+  text-decoration: none;
+  color: #FF0000;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in animation to form-filling */
+.form-filling {
+  animation: fadeIn 0.5s ease-in-out both; /* Quick fade-in */
+}

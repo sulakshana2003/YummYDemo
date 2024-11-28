@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="css/cart1.css">
+  <link rel="stylesheet" href="css/newfooter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <script src="js/cart.js" defer></script>
+</head>
+<body onload="renderCart()">
+  <header>
+    <div class="logop" id="yummyphoto">
+      <h1>YummY</h1>
+    </div>
+    <div class="products" id="products">
+      <div class="cart-icon">
+        <a href="newcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="fullcontainer">
+    <div class="box-container"> <!-- Parent container for the boxes -->
+      <div id="main-container" class="main-container">
+        <h1>Your Shopping Cart</h1>
+        <hr>
+        <div id="cart-container">
+          <table id="cart-table">
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items">
+              <!-- Cart items will be dynamically injected here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="Sec-container" class="Sec-container">
+        <h2>Cart Summary</h2>
+        <hr>
+        <p class="totalammline"><strong>Total Amount:</strong> LKR <span id="cart-total">0.00</span>/=</p>
+        <button class="clearcart" onclick="clearCart()">Clear Cart</button>
+        <button class="proceed" onclick="proceedToCheckout()">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="new-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <h3>YummY</h3>
+        </div>
+        <p class="footer-description">Delivering happiness to your doorstep. Experience the best food delivery service in Colombo.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="newhomepage.html">Home</a></li>
+          <li><a href="menupage.html">Menu</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Help & Support</h4>
+        <ul class="footer-links">
+          <li><a href="contactus.html">FAQ</a></li>
+          <li><a href="privacypolicy.html">Terms of Service</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul class="contact-info">
+          <li><i class="fas fa-phone"></i> +94 11 234 5678</li>
+          <li><i class="fas fa-envelope"></i> support@yummy.lk</li>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Food Street, Colombo 03, Sri Lanka</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2024 YummY. All rights reserved.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

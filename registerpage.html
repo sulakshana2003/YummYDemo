@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/registerpage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/newfooter.css">
+  <title>registerpage</title>
+</head>
+
+<body>
+  <div class="full-container">
+    <div class="Register-container">
+      <h2>Become A <span class="foody">FOODY</span></h2>
+      <form method="post" class="rform" action="" onsubmit="return validateInputs();">
+        <!--tittle selection-->
+        <div class="stitle">
+          <label for="Title">Title</label>
+          <select id="Title" name="Title">
+            <option value="Mr">Mr.</option>
+            <option value="Mrs">Mrs.</option>
+            <option value="Ms">Ms.</option>
+            <option value="Dr">Dr.</option>
+          </select>
+        </div>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" required placeholder="Ex-:Sulakshana" required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" required placeholder="Ex-:Sulakshana" required>
+        <label for="District">District</label>
+        <select name="District" id="District">
+          <option value="Ampara">Ampara</option>
+          <option value="Anuradhapura">Anuradhapura</option>
+          <option value="Badulla">Badulla</option>
+          <option value="Batticaloa">Batticaloa</option>
+          <option value="Galle">Galle</option>
+          <option value="Gampaha">Gampaha</option>
+          <option value="Hambantota">Hambantota</option>
+          <option value="Jaffna">Jaffna</option>
+          <option value="Kalutara">Kalutara</option>
+          <option value="Kandy">Kandy</option>
+          <option value="Kegalle">Kegalle</option>
+          <option value="Kilinochchi">Kilinochchi</option>
+          <option value="Kurunegala">Kurunegala</option>
+          <option value="Mannar">Mannar</option>
+          <option value="Matale">Matale</option>
+          <option value="Matara">Matara</option>
+          <option value="Monaragala">Monaragala</option>
+          <option value="Mullaitivu">Mullaitivu</option>
+          <option value="NuwaraEliya">NuwaraEliya</option>
+          <option value="Polonnaruwa">Polonnaruwa</option>
+          <option value="Puttalam">Puttalam</option>
+          <option value="Ratnapura">Ratnapura</option>
+          <option value="Trincomalee">Trincomalee</option>
+          <option value="Vavuniya">Vavuniya</option>
+        </select>
+        <label for="phonenumber">Phone Number</label>
+        <input type="text" id="phonenumber" required placeholder="Ex-:07########" maxlength="10">
+        <label for="Email">Email</label>
+        <input type="email" id="Email" required placeholder="Enter your Email">
+        <label for="password1">Password</label>
+        <input type="password" id="password1" required maxlength="10" placeholder="Enter Password">
+        <label for="cpassword">Confirm Password</label>
+        <input type="password" id="cpassword" required placeholder="ReEnter Password" required maxlength="10">
+        <div class="getusername">
+          <label for="uphone">Use phonenumber as username</label>
+          <input type="radio" id="one" class="oneb" name="one">
+          <label for="uemail">Use Email as username</label>
+          <input type="radio" id="one" class="oneb" name="one">
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <p class="Register">Already registered? <a href="signin.html" target="_blank">Sign In</a></p>
+      </form>
+    </div>
+  </div>
+  <footer class="new-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <h3>YummY</h3>
+        </div>
+        <p class="footer-description">Delivering happiness to your doorstep. Experience the best food delivery service in Colombo.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="newhomepage.html">Home</a></li>
+          <li><a href="menupage.html">Menu</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Help & Support</h4>
+        <ul class="footer-links">
+          <li><a href="contactus.html">FAQ</a></li>
+          <li><a href="privacypolicy.html">Terms of Service</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul class="contact-info">
+          <li><i class="fas fa-phone"></i> +94 11 234 5678</li>
+          <li><i class="fas fa-envelope"></i> support@yummy.lk</li>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Food Street, Colombo 03, Sri Lanka</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2024 YummY. All rights reserved.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function validateInputs() {
+
+      const phonenumber = document.getElementById("phonenumber").value;
+      const coorectPhone = /^\d{10}$/;
+      if (!coorectPhone.test(phonenumber)) {
+        alert("Enter valid Phone number with 10 Digits!")
+        return false;
+      }
+      const email = document.getElementById("Email").value;
+      const correctmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!correctmail.test(email)) {
+        alert("Enter valid Email!");
+        return false;
+      }
+      const password = document.getElementById("password1").value;
+      const cpassword = document.getElementById("cpassword").value;
+
+      if (password.length < 8) {
+        alert("Password lenght must be 8 digits!");
+        return false;
+      }
+      if (password !== cpassword) {
+        alert("Passwords do not match!");
+        return false;
+      }
+      const username1 = document.getElementById("one").checked;
+      if (!username1) {
+        alert("Choose one options as username!");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+
+</html>

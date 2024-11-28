@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/signin.css">
+  <link rel="stylesheet" href="css/newfooter.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+</head>
+<body>
+  <div class="form-container" id="form-container">
+    <div class="form-filling" id="form-filling">
+    <h1>Sign In to <span class="yum">YummY</span></h1>
+      <form action="/submit-signin" method="post" action="" onsubmit="return validateInputs();">
+      <label for="email" class="emailin">Email:</label>
+      <input type="email" class="emiiln" required placeholder="Enter your email" id="email">
+      <label for="password" class="pass">Password:</label>
+      <input type="password" id="password" required placeholder="Enter your password" minlength="6"><br>
+      <button type="submit">Sign in</button>
+      <p class="sign-inn">Don't have an account? <a href="registerpage.html">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+  <footer class="new-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <h3>YummY</h3>
+        </div>
+        <p class="footer-description">Delivering happiness to your doorstep. Experience the best food delivery service in Colombo.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="newhomepage.html">Home</a></li>
+          <li><a href="menupage.html">Menu</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Help & Support</h4>
+        <ul class="footer-links">
+          <li><a href="contactus.html">FAQ</a></li>
+          <li><a href="privacypolicy.html">Terms of Service</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul class="contact-info">
+          <li><i class="fas fa-phone"></i> +94 11 234 5678</li>
+          <li><i class="fas fa-envelope"></i> support@yummy.lk</li>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Food Street, Colombo 03, Sri Lanka</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2024 YummY. All rights reserved.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function validateInputs() {
+      const email = document.getElementById("email").value;
+      const correctmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!correctmail.test(email)) {
+        alert("Enter valid Email!");
+        return false;
+      }
+      const password = document.getElementById("password").value;
+      if (password.length < 8) {
+        alert("Password length must be 8 digits!");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
